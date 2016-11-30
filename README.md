@@ -1,6 +1,6 @@
 # multiline-template
 
-Multiline tagged templates using pipes | to signal line start, no more crazy indent hacks.
+Multiline tagged templates using a pipe `|`, followed by a space, to signal line start, no more crazy indent hacks.
 
 
 ## Install
@@ -60,3 +60,5 @@ first
   third
 fourth
 ```
+
+:shipit:
