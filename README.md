@@ -14,9 +14,9 @@ npm install --save multiline-template
 Using [Tagged Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_template_literals), you use the pipe `|` plus one space immediately after to signal where you want to line to start.
 
 ```js
-import multiline from 'multiline';
+import multiline from 'multiline-template';
 // or
-const multiline = require('multiline');
+const multiline = require('multiline-template');
 
 const msg =  multiline`
   | first
@@ -38,7 +38,7 @@ fourth
 It also indents interpolated values to the provided indention level
 
 ```js
-import multiline from 'multiline';
+import multiline from 'multiline-template';
 
 const part =  multiline`
   | second
