@@ -2,6 +2,7 @@
 
 Multiline tagged templates using a pipe `|`, followed by a space, to signal line start, no more crazy indent hacks.
 
+<a href="https://app.codesponsor.io/link/zs7vWiDv2F99bX6Ay7PJa5WE/jayphelps/multiline-template" rel="nofollow"><img src="https://app.codesponsor.io/embed/zs7vWiDv2F99bX6Ay7PJa5WE/jayphelps/multiline-template.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
 
 ## Install
 
