@@ -1,6 +1,6 @@
 {
   "name": "multiline-template",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Multiline tagged templates using pipes | to signal line start, no more crazy indent hacks.",
   "main": "src/index.js",
   "scripts": {

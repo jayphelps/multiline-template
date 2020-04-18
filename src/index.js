@@ -10,7 +10,7 @@ function multiline(strings) {
       if (args.hasOwnProperty(i)) {
         var lines = part.split('\n');
         // find indention of the current line
-        var indent = lines[lines.length - 1].replace(/[ \t\r]*\| ([ \t\r]*).*$/, '$1');
+        var indent = lines[lines.length - 1].replace(/[ \t\r]*\|([ \t\r]*).*$/, '$1');
         // indent interpolated lines to match
         var tail = (args[i] || '').split('\n').join('\n' + indent);
         return out + part + tail;
@@ -22,7 +22,7 @@ function multiline(strings) {
     .replace(/^\s*|\n\s*$/g, '')
     // indent as instructed, relative to pipe position
     // plus a single space after
-    .replace(/^[ \t\r]*\| (.*)$/gm, '$1')
+    .replace(/^[ \t\r]*\|(.*)$/gm, '$1')
 }
 
 module.exports = multiline;
