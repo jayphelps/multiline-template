@@ -24,6 +24,20 @@ describe('multiline', () => {
     `.should.equal('first\nsecond\nthird\nfourth');
   });
 
+  it('handles non-string values', () => {
+    multiline`
+      |first
+      |  ${undefined}
+      |  ${null}
+      |  ${false}
+      |  ${1}
+      |  ${{}}
+      |  ${[1, 2]}
+      |  ${Symbol('test')}
+      |fourth
+    `.should.equal('first\n  undefined\n  null\n  false\n  1\n  [object Object]\n  1,2\n  Symbol(test)\nfourth');
+  });
+
   it('indents interpolated values', () => {
     const part = multiline`
       |second
